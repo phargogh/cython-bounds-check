@@ -12,7 +12,7 @@ def find_intersecting_points(filepath, bbox):
     points_file = open(filepath, 'r')
     points_file.readline()  # skip header
     for line in points_file:
-        if (counter % 100000) == 0:
+        if (counter % 1000000) == 0:
             print(counter)
 
         counter += 1
